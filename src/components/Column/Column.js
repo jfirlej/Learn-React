@@ -1,18 +1,22 @@
-import React from "react";
-import styles from "./Column.scss";
-import List from "../List/List.js";
-import { settings } from "../../data/dataStore";
-import Card from "../Card/Card.js";
-import Creator from "../Creator/Creator.js";
-import Icon from "../Button/Icon.js";
+import React from 'react';
+import styles from './Column.scss';
+import { settings } from '../../data/dataStore';
+import Card from '../Card/Card.js';
+import Creator from '../Creator/Creator.js';
+import Icon from '../Button/Icon.js';
 
 class Column extends React.Component {
   state = {
     card: this.props.card || []
   };
+  static propTypes = {
+    card: this.propTypes,
+    icon: this.propTypes,
+    title: this.propTypes
+  };
 
   addCard(title) {
-    console.log("addCard", title);
+    console.log('addCard', title);
     this.setState(state => ({
       card: [
         ...state.card,
@@ -21,7 +25,7 @@ class Column extends React.Component {
             ? state.card[state.card.length - 1].key + 1
             : 0,
           title,
-          icon: "list-alt"
+          icon: 'list-alt'
         }
       ]
     }));

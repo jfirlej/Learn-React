@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "./Card.scss";
-import { pageContents, listData } from "../../data/dataStore";
-import PropTypes from "prop-types";
-import Button from "../Button/Button";
+import React from 'react';
+import styles from './Card.scss';
+
+import PropTypes from 'prop-types';
 
 class Card extends React.Component {
   static propTypes = {

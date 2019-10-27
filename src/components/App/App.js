@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "./App.scss";
-import List from "../List/List.js";
-import { pageContents, listData } from "../../data/dataStore";
-import Hero from "../Hero/Hero.js";
-import ReactHtmlParser from "react-html-parser";
-import Creator from "../Creator/Creator.js";
-import listStyle from "../List/List.scss";
+import React from 'react';
+import styles from './App.scss';
+import List from '../List/List.js';
+import { pageContents, listData } from '../../data/dataStore';
+import Hero from '../Hero/Hero.js';
+import ReactHtmlParser from 'react-html-parser';
+import Creator from '../Creator/Creator.js';
+import listStyle from '../List/List.scss';
 class App extends React.Component {
   state = {
     list: []
@@ -28,7 +28,7 @@ class App extends React.Component {
           <List {...listData} key={index} title={item} />
         ))}
         <div className={listStyle.creator}>
-          <Creator text={"dodaj liste"} action={title => this.addList(title)} />
+          <Creator text={'dodaj liste'} action={title => this.addList(title)} />
         </div>
       </main>
     );
