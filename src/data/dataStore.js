@@ -4,19 +4,19 @@ export const settings = {
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
-    defaultText: 'Add new item',
+    defaultText: 'Add new item'
   },
   search: {
     defaultText: 'Search...',
-    icon: 'search',
+    icon: 'search'
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
-  defaultColumnIcon: 'list-alt',
+  defaultColumnIcon: 'list-alt'
 };
 
 export const pageContents = {
   title: 'My first React app',
-  subtitle: 'A simple to-do app, with lists, columns and cards',
+  subtitle: 'A simple to-do app, with lists, columns and cards'
 };
 
 export const listData = {
@@ -31,13 +31,13 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'This Is Going to Hurt',
+          title: 'This Is Going to Hurt'
         },
         {
           key: 1,
-          title: 'Interpreter of Maladies',
-        },
-      ],
+          title: 'Interpreter of Maladies'
+        }
+      ]
     },
     {
       key: 1,
@@ -46,13 +46,13 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'Harry Potter',
+          title: 'Harry Potter'
         },
         {
           key: 1,
-          title: 'Star Wars',
-        },
-      ],
+          title: 'Star Wars'
+        }
+      ]
     },
     {
       key: 2,
@@ -61,15 +61,15 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'The Witcher',
+          title: 'The Witcher'
         },
         {
           key: 1,
-          title: 'Skyrim',
-        },
-      ],
-    },
-  ],
+          title: 'Skyrim'
+        }
+      ]
+    }
+  ]
 };
 
 const lists = [
@@ -77,8 +77,8 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  },
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'
+  }
 ];
 
 const columns = [
@@ -86,66 +86,66 @@ const columns = [
     id: 'column-1',
     listId: 'list-1',
     title: 'Books',
-    icon: 'book',
+    icon: 'book'
   },
   {
     id: 'column-2',
     listId: 'list-1',
     title: 'Movies',
-    icon: 'film',
+    icon: 'film'
   },
   {
     id: 'column-3',
     listId: 'list-1',
     title: 'Games',
-    icon: 'gamepad',
+    icon: 'gamepad'
   },
   {
     id: 'column-4',
     listId: 'list-2',
     title: 'Strange column',
-    icon: 'question',
-  },
+    icon: 'question'
+  }
 ];
 
 const cards = [
   {
     id: 'card-1',
     columnId: 'column-1',
-    title: 'This Is Going to Hurt',
+    title: 'This Is Going to Hurt'
   },
   {
     id: 'card-2',
     columnId: 'column-1',
-    title: 'Interpreter of Maladies',
+    title: 'Interpreter of Maladies'
   },
   {
     id: 'card-3',
     columnId: 'column-2',
-    title: 'Harry Potter',
+    title: 'Harry Potter'
   },
   {
     id: 'card-4',
     columnId: 'column-2',
-    title: 'Star Wars',
+    title: 'Star Wars'
   },
   {
     id: 'card-5',
     columnId: 'column-3',
-    title: 'The Witcher',
+    title: 'The Witcher'
   },
   {
     id: 'card-6',
     columnId: 'column-3',
-    title: 'Skyrim',
-  },
+    title: 'Skyrim'
+  }
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
-  cards: [...cards],
+  cards: [...cards]
 };
 
 export default initialStoreData;
