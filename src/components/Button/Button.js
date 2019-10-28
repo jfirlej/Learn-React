@@ -15,7 +15,7 @@ const Button = ({ variant = '', ...otherProps }) => (
   />
 );
 Button.propTypes = {
-  variant: PropTypes.node
+  variant: PropTypes
 };
 
 export default Button;

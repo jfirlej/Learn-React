@@ -16,6 +16,6 @@ const Hero = props => {
 Hero.propTypes = {
   titleText: PropTypes.node,
 
-  heroImage: PropTypes.shape({ src: PropTypes.string })
+  heroImage: PropTypes.string
 };
 export default Hero;
